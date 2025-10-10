@@ -24,8 +24,6 @@ function App() {
       } else {
         setActiveSection('about')
       }
-
-      // console.log('Scrolling. Current position:', window.scrollY)
     }  
     window.addEventListener('scroll', handleScroll)
 
