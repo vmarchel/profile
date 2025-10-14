@@ -1,9 +1,9 @@
 #experience {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
 }
 
 .experience-content {
-    max-width: 700px;
+    max-width: 750px;
 }
 
 .experience-item {
@@ -74,6 +74,12 @@
 
   .experience-date {
     margin-bottom: 10px;
+  }
+
+
+    
+  #experience {
+      padding-top: 50px;
   }
 
 }

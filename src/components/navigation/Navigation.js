@@ -1,5 +1,6 @@
 import './Navigation.css';
-import {Github, Linkedin, Mail} from 'lucide-react'
+import {Github, Linkedin, Mail, Download} from 'lucide-react'
+import CV from '../../assets/VALENTINA_MARCHEL_CV.pdf'
 
 export default function Navigation ({activeSection}){
     return (
@@ -32,14 +33,17 @@ export default function Navigation ({activeSection}){
             </ul>
 
             <div className='social-icons'>
-                <a href='https://github.com/vmarchel' target='_blank'>
+                <a href='https://github.com/vmarchel' target='_blank' rel="noopener noreferrer">
                 <Github />
                 </a>
-                <a href='https://www.linkedin.com/in/vmarchel/' target='_blank'>
+                <a href='https://www.linkedin.com/in/vmarchel/' target='_blank' rel="noopener noreferrer">
                 <Linkedin />
                 </a>
                 <a href='mailto:vmarchel@outlook.com'>
                 <Mail />
+                </a>
+                <a href={CV} download='Valentina_Marchel_CV.pdf'>
+                <Download />
                 </a>
             </div>
 

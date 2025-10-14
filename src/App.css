@@ -13,10 +13,8 @@ html {
 
 body {
   color: #e6e6e6;
-  background: linear-gradient(135deg, #0a192f 0%, #020c1b 100%);
-  background-attachment: fixed;
+  background: #0a192f ;
   min-height: 100vh;
-  /* overflow-x: hidden; */
 }
 
 .app-container {
@@ -36,25 +34,24 @@ body {
 .main-content {
   max-width: 750px;
   margin-left: 450px;
-  /* margin-right: 50px; */
   min-height: 100vh;
-  background: transparent; 
+}
+
+.mobile-social-footer {
+    display: none;
 }
 
 .section-title {
   display: none;
-  font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 30px;
-  letter-spacing: 2px;
 }
+
 
 /* _______________________________________Responsiveness */
 
 @media (max-width: 1024px) {
-  .app-container {
+  /* .app-container {
     padding: 0 30px;
-  }
+  } */
 
   .sidebar {
     position: static;
@@ -68,12 +65,50 @@ body {
     margin-left: 0;
   }
 
-  .section-title {
-    display: block;
-  }
-
   .social-icons {
     margin-top: 30px;
   }
+    
+  .mobile-social-footer {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 100;
+    border-top: 1px solid rgba(255, 192, 203, 0.2);
+  }
+  
+  .social-tag {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(255, 192, 203, 0.2);
+    color: pink;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .social-tag:hover {
+    background-color: rgba(255, 192, 203, 0.3);
+    transform: translateY(-2px);
+  }
 
+  .section-title {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 30px 0;
+}
+   
 }

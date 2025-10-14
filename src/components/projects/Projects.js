@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Projects.css';
 import {projects} from './projectsData.js'
+import { ArrowUpRight } from 'lucide-react';
+
 
 export default function Projects() {
 
@@ -8,8 +10,9 @@ export default function Projects() {
    
     return (
     <section id='projects'>
+        <h2 className='section-title'>PROJECTS</h2>
         <div className='projects-content'>
-            <h2 className='section-title'>PROJECTS</h2>
+
             {projects.map(project => (
             <div 
                 key={project.id} 
@@ -21,7 +24,10 @@ export default function Projects() {
                 <img className='project-image' src={project.image} alt={project.title}/>
                 
                 <div className='project-content'>
-                    <h3>{project.title}</h3>
+                    <div className='project-header'>
+                        <h3>{project.title}</h3>
+                        <ArrowUpRight className='project-arrow' size={15} />
+                    </div>
                     <p>{project.description}</p>
 
                     <div className='project-technologies'>

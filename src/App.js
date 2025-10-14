@@ -4,10 +4,15 @@ import About from './components/about/About';
 import Experience from './components/experience/Experience';
 import Navigation from './components/navigation/Navigation';
 import Projects from './components/projects/Projects';
+import {Github, Linkedin, Mail, Download} from 'lucide-react'
+import CV from './assets/VALENTINA_MARCHEL_CV.pdf'
+
+
 
 function App() {
 
   const [activeSection, setActiveSection] = useState('')
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,20 +35,63 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+    
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
-    <div className='app-container'>
+    <>
+      
+      <div 
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        pointerEvents: 'none',
+        zIndex: 1,
+        background: `radial-gradient(200px circle at ${mousePosition.x}px ${mousePosition.y}px, 
+          rgba(255, 192, 203, 0.15), 
+          transparent 80%)`
+      }}
+      />
+      
+      <div className='app-container'>
 
-      <Navigation activeSection={activeSection}/>
+        <Navigation activeSection={activeSection}/>
 
-      <main className='main-content'>
+        <main className='main-content'>
+        
+        <About />
+        <Experience />
+        <Projects />
 
-      <About />
-      <Experience />
-      <Projects />
+        </main>
 
-      </main>
+      </div>
 
-    </div>
+      <div className='mobile-social-footer'>
+                <a href='https://github.com/vmarchel' className='social-tag' target='_blank' rel="noopener noreferrer">
+                <Github />
+                </a>
+                <a href='https://www.linkedin.com/in/vmarchel/' className='social-tag' target='_blank' rel="noopener noreferrer">
+                <Linkedin />
+                </a>
+                <a href='mailto:vmarchel@outlook.com' className='social-tag'>
+                <Mail />
+                </a>
+                <a href={CV} download='Valentina_Marchel_CV.pdf' className='social-tag'>
+                <Download />
+                </a>
+            </div>
+
+    </>
   );
 }
 

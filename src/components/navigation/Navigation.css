@@ -78,9 +78,10 @@
   .sidebar ul {
     display: none;
   }
-}
+
 .sidebar {
     padding-left: 0;
+    padding-bottom: 0;
 }
 
 .nav-header {
@@ -88,5 +89,7 @@
 }
 
 .social-icons {
-    padding-left: 0;
+    display: none;
+}
+
 }
