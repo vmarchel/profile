@@ -1,6 +1,6 @@
 import './Navigation.css';
 import {Github, Linkedin, Mail, Download} from 'lucide-react'
-import CV from '../../assets/VALENTINA_MARCHEL_CV.pdf'
+// import CV from '../../assets/VALENTINA_MARCHEL_CV.pdf'
 
 export default function Navigation ({activeSection}){
     return (
@@ -42,9 +42,9 @@ export default function Navigation ({activeSection}){
                 <a href='mailto:vmarchel@outlook.com'>
                 <Mail />
                 </a>
-                <a href={CV} download='Valentina_Marchel_CV.pdf'>
+                {/* <a href={CV} download='Valentina_Marchel_CV.pdf'>
                 <Download />
-                </a>
+                </a> */}
             </div>
 
         </nav>

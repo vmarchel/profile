@@ -1,40 +1,41 @@
 import portfolioImg from './images/portfolioImg.png'
 import expenseFlowImg from './images/expenseFlowImg.png'
-import quotesImg from './images/quotesImg.png'
+import wisdomsImg from './images/wisdomsImg.jpg'
 import adoptatailImg from './images/adoptatailImg.png'
 
 
 export const projects = [
+
     {
         id: 1,
-        title: 'Portfolio Website',
-        description: 'A modern, responsive portfolio website built with React.',
-        image: portfolioImg,
-        technologies: ['React', 'CSS3', 'Responsive Design'],
-        demo: '#'
+        title: 'Expense Tracker',
+        description: 'A React-based expense tracking application for managing personal finances. Implements full CRUD operations, state management with React Hooks, and Material-UI components for a polished, modern interface. Features expense categorization and real-time data updates.',
+        image: expenseFlowImg,
+        technologies: ['React', 'Material-UI', 'JavaScript', 'Component-based Architecture'],
+        demo: 'https://expensefl0w.netlify.app'
     },
     {
         id: 2,
-        title: 'Expense Tracker',
-        description: 'A React-based expense tracking application.',
-        image: expenseFlowImg,
-        technologies: ['React', 'Material-UI', 'JavaScript'],
-        demo: '#'
+        title: 'Wisdoms - Quotes App',
+        description: 'A quotes application that integrates with the DummyJSON API to fetch and display inspirational quotes. Features search functionality with keyword filtering, local storage for saving favorite quotes and a clean UI.',
+        image: wisdomsImg,
+        technologies: ['JavaScript', 'REST API', 'HTML5', 'CSS3'],
+        demo: 'https://wisdoms-app.netlify.app'
     },
     {
         id: 3,
-        title: 'Quotes Application',
-        description: 'An interactive quotes app with full CRUD operations.',
-        image: quotesImg,
-        technologies: ['JavaScript', 'API', 'HTML5', 'CSS3'],
-        demo: '#'
+        title: 'Pet Adoption Website',
+        description: 'A pet adoption website showcasing clean HTML and CSS fundamentals. Clean design with thoughtful layout and spacing',
+        image: adoptatailImg,
+        technologies: ['HTML5', 'CSS3', 'Responsive Design'],
+        demo: 'https://adopt-a-tail.netlify.app'
     },
     {
         id: 4,
-        title: 'Pet Adoption Website',
-        description: 'A responsive website showcasing pet adoption services.',
-        image: adoptatailImg,
-        technologies: ['HTML5', 'CSS3', 'Flexbox', 'Grid'],
+        title: 'Portfolio Website',
+        description: 'A responsive portfolio website showcasing projects and skills. Built with React and features smooth scrolling navigation, dynamic project cards, and mobile-optimized design.',
+        image: portfolioImg,
+        technologies: ['React', 'CSS3', 'Responsive Design', 'Javascript'],
         demo: '#'
-    }
+},
 ];

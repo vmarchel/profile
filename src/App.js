@@ -5,8 +5,7 @@ import Experience from './components/experience/Experience';
 import Navigation from './components/navigation/Navigation';
 import Projects from './components/projects/Projects';
 import {Github, Linkedin, Mail, Download} from 'lucide-react'
-import CV from './assets/VALENTINA_MARCHEL_CV.pdf'
-
+// import CV from './assets/VALENTINA_MARCHEL_CV.pdf'
 
 
 function App() {
@@ -86,9 +85,9 @@ function App() {
                 <a href='mailto:vmarchel@outlook.com' className='social-tag'>
                 <Mail />
                 </a>
-                <a href={CV} download='Valentina_Marchel_CV.pdf' className='social-tag'>
+                {/* <a href={CV} download='Valentina_Marchel_CV.pdf' className='social-tag'>
                 <Download />
-                </a>
+                </a> */}
             </div>
 
     </>
