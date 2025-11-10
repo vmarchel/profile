@@ -12,7 +12,7 @@ export const projects = [
         description: 'A React-based expense tracking application for managing personal finances. Implements full CRUD operations, state management with React Hooks, and Material-UI components for a polished, modern interface. Features expense categorization and real-time data updates.',
         image: expenseFlowImg,
         technologies: ['React', 'Material-UI', 'JavaScript', 'Component-based Architecture'],
-        demo: 'https://expensefl0w.netlify.app'
+        demo: 'https://expensefl0w.valentinamarchel.com'
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export const projects = [
         description: 'A quotes application that integrates with the DummyJSON API to fetch and display inspirational quotes. Features search functionality with keyword filtering, local storage for saving favorite quotes and a clean UI.',
         image: wisdomsImg,
         technologies: ['JavaScript', 'REST API', 'HTML5', 'CSS3'],
-        demo: 'https://wisdoms-app.netlify.app'
+        demo: 'https://wisdoms-app.valentinamarchel.com'
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ export const projects = [
         description: 'A pet adoption website showcasing clean HTML and CSS fundamentals. Clean design with thoughtful layout and spacing',
         image: adoptatailImg,
         technologies: ['HTML5', 'CSS3', 'Responsive Design'],
-        demo: 'https://adopt-a-tail.netlify.app'
+        demo: 'https://adopt-a-tail.valentinamarchel.com'
     },
     {
         id: 4,
