@@ -49,12 +49,23 @@ body {
 /* _______________________________________Responsiveness */
 
 @media (max-width: 1024px) {
-  /* .app-container {
-    padding: 0 30px;
-  } */
+
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .app-container {
+    padding: 0 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
   .sidebar {
-    position: static;
+    position: relative;
     width: 100%;
     height: auto;
     padding: 40px 10px;
@@ -63,6 +74,7 @@ body {
   .main-content {
     width: 100%;
     margin-left: 0;
+    padding: 0;
   }
 
   .social-icons {

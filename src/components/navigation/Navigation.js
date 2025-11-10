@@ -8,7 +8,7 @@ export default function Navigation ({activeSection}){
             <div className='nav-header'>
                 <h3>Valentina Marchel</h3>
                 <h5>Front End Enthusiast</h5>
-                <p>I enjoy creating web experiences that just make sense to use</p>
+                <p>Frontend developer in the making</p>
             </div>
 
             <ul>
