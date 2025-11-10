@@ -36,6 +36,6 @@ export const projects = [
         description: 'A responsive portfolio website showcasing projects and skills. Built with React and features smooth scrolling navigation, dynamic project cards, and mobile-optimized design.',
         image: portfolioImg,
         technologies: ['React', 'CSS3', 'Responsive Design', 'Javascript'],
-        demo: '#'
+        demo: 'https://valentinamarchel.com'
 },
 ];
