@@ -10,7 +10,7 @@ export default function Experience() {
                 
                 <div className='experience-item'>
                     <div className='experience-date'>
-                        <span>Jul 2022 — Present</span>
+                        <span>Present</span>
                     </div>
                     <div className='experience-details'>
                         <h3>Career Break - Professional Development</h3>
